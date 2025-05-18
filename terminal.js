@@ -54,7 +54,7 @@ function handleCommand(cmd) {
     if (cleanCmd === 'sudo apt bio') {
         printOutput(`
             <span style="color:#ffbd2e;">Bio:</span> 
-            Meu chamo Fab e sou um entusiasta da tecnologia, apaixonado por Linux e open source.<br>
+            Me chamo Fab e sou um entusiasta da tecnologia, apaixonado por Linux e open source.<br>
             Adoro música, leitura, arte e explorar novas ideias.<br>
             Sempre em busca de aprender, compartilhar conhecimento e contribuir para a comunidade.<br>
             Sinta-se à vontade para explorar meus projetos e entrar em contato!
@@ -79,17 +79,17 @@ function handleCommand(cmd) {
         <div>
             <span style="color:#ffbd2e;">Front-end:</span><br>
             <span style="font-size:1.2em;">
-            <img src="assets/icons/html-5.png" alt="HTML5 logo in orange and white, representing the HTML5 markup language" title="HTML5" width="24" style="vertical-align:middle;"> HTML5 &nbsp;
-            <img src="assets/icons/css.png" alt="CSS3 logo in blue and white, representing the CSS3 stylesheet language" title="CSS3" width="24" style="vertical-align:middle;"> CSS3 &nbsp;
-            <img src="assets/icons/js-file.png" alt="JavaScript file icon in yellow, representing JavaScript programming language" title="JavaScript" width="24" style="vertical-align:middle;"> JavaScript &nbsp;
-            <img src="assets/icons/react.png" alt="React logo, blue atom symbol, representing the React JavaScript library" title="React" width="24" style="vertical-align:middle;"> React
+            <img src="html-5.png" alt="HTML5 logo in orange and white, representing the HTML5 markup language" title="HTML5" width="24" style="vertical-align:middle;"> HTML5 &nbsp;
+            <img src="css.png" alt="CSS3 logo in blue and white, representing the CSS3 stylesheet language" title="CSS3" width="24" style="vertical-align:middle;"> CSS3 &nbsp;
+            <img src="js-file.png" alt="JavaScript file icon in yellow, representing JavaScript programming language" title="JavaScript" width="24" style="vertical-align:middle;"> JavaScript &nbsp;
+            <img src="react.png" alt="React logo, blue atom symbol, representing the React JavaScript library" title="React" width="24" style="vertical-align:middle;"> React
             </span>
             <br><br>
             <span style="color:#ffbd2e;">Back-end:</span><br>
             <span style="font-size:1.2em;">
-            <img src="assets/icons/nodejs.png" alt="Node.js logo, green hexagon with Node.js text, representing Node.js runtime" title="Node.js" width="24" style="vertical-align:middle;"> Node.js &nbsp;
-            <img src="assets/icons/python.png" alt="Python logo, blue and yellow intertwined snakes, representing Python programming language" title="Python" width="24" style="vertical-align:middle;"> Python &nbsp;
-            <img src="assets/icons/php.png" alt="PHP logo, purple oval with PHP text, representing PHP programming language" title="PHP" width="24" style="vertical-align:middle;"> PHP
+            <img src="nodejs.png" alt="Node.js logo, green hexagon with Node.js text, representing Node.js runtime" title="Node.js" width="24" style="vertical-align:middle;"> Node.js &nbsp;
+            <img src="python.png" alt="Python logo, blue and yellow intertwined snakes, representing Python programming language" title="Python" width="24" style="vertical-align:middle;"> Python &nbsp;
+            <img src="php.png" alt="PHP logo, purple oval with PHP text, representing PHP programming language" title="PHP" width="24" style="vertical-align:middle;"> PHP
             </span>
         </div>
         `);
