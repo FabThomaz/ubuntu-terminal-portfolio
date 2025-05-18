@@ -16,7 +16,7 @@ body {
 .terminal {
     background-color: #1e1e1e;
     border: 1px solid #333;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 32px 48px; /* Aumenta o espaço interno nas laterais e topo/baixo */
     height: 600px;      /* Aumenta a altura vertical */
     max-width: 900px;   /* Limita a largura máxima para melhor visualização */
