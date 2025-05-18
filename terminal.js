@@ -104,6 +104,7 @@ function handleCommand(cmd) {
             <span style="color:#cccccc;">
                 Player de músicas online com tema synthwave, vídeo de fundo e playlist.
             </span>
+            <br>
              <span style="color:#ffbd2e;">Ubuntu Terminal Portfolio</span><br>
             <a href="https://ubuntuterminalportfolio.netlify.app/" target="_blank" style="color:#00bfff; text-decoration:underline;">
                 https://ubuntuterminalportfolio.netlify.app/
