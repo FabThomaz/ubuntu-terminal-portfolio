@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Terminal Portfolio</title>
+    <link rel="stylesheet" href="styles/terminal.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon/ubuntu.ico">
+</head>
+<body>
+    <!-- Remova ou comente esta linha -->
+    <!-- <h1 class="terminal-main-title">Ubuntu Terminal Portfolio</h1> -->
+    <div class="terminal">
+        <div class="terminal-titlebar">
+            <span class="terminal-btn close"></span>
+            <span class="terminal-btn min"></span>
+            <span class="terminal-btn max"></span>
+            <span class="terminal-window-title">Ubuntu Terminal Portfolio</span>
+        </div>
+        <!-- Tutorial de comandos -->
+        <div class="terminal-tutorial">
+            <strong>Comandos disponíveis:</strong><br>
+            <span class="tutorial-cmd">sudo apt bio</span> — Exibe minha bio<br>
+            <span class="tutorial-cmd">sudo apt info</span> — Exibe meus dados pessoais<br>
+            <span class="tutorial-cmd">sudo apt skills</span> — Exibe minhas habilidades<br>
+            <span class="tutorial-cmd">sudo apt projects</span> — Exibe meus projetos<br>
+            <span class="tutorial-cmd">sudo apt contact</span> — Exibe meus contatos<br>
+            <span class="tutorial-cmd">clear</span> — Limpa o histórico do terminal<br>
+            <span class="tutorial-cmd">exit</span> — Sair do terminal<br>
+            <br>
+        </div>
+        <div id="terminal-output">
+            <div class="input-line">
+                <input class="input" autofocus />
+            </div>
+        </div>
+    </div>
+    <script src="scripts/terminal.js"></script>
+</body>
+</html>

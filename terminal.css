@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+
+body {
+    background: url('../assets/ubuntu-desktop-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.terminal {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 32px 48px; /* Aumenta o espaço interno nas laterais e topo/baixo */
+    height: 600px;      /* Aumenta a altura vertical */
+    max-width: 900px;   /* Limita a largura máxima para melhor visualização */
+    margin: 40px auto;  /* Centraliza horizontalmente e adiciona espaço externo */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 32px; /* Espaço para a barra de título */
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+}
+
+.terminal,
+.terminal * {
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace !important;
+}
+
+.terminal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal::-webkit-scrollbar-thumb {
+    background: #5e2750;
+    border-radius: 4px;
+}
+
+.terminal::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.input-line {
+    display: flex;
+}
+
+.input-line:before {
+    content: 'user@portfolio:~$';
+    color: #00ff00;
+    margin-right: 10px;
+}
+
+.input-line::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 1em;
+    vertical-align: middle;
+    border-right: 2px solid #00ff00;
+    animation: blink-cursor 1s steps(1) infinite;
+    margin-left: 2px;
+}
+
+.input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    caret-color: #00ff00; /* cursor verde */
+    font-family: 'Courier New', Courier, monospace; /* igual ao body */
+    font-size: 16px; /* igual ao body */
+    line-height: 1.5; /* igual ao body */
+}
+
+.output {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+/* Barra de título estilo Ubuntu */
+.terminal-titlebar {
+    display: flex;
+    align-items: center;
+    background: #2c001e;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 12px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 2;
+    justify-content: flex-start;
+}
+
+.terminal-window-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-left: -60px; /* Ajuste para centralizar visualmente entre os botões */
+    user-select: none;
+    pointer-events: none;
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+    border: 1.5px solid #222;
+    box-shadow: 0 1px 2px #0004;
+    transition: filter 0.2s;
+}
+
+.terminal-btn:last-child {
+    margin-right: 0;
+}
+
+.terminal-btn.close { background: #ff5f56; }
+.terminal-btn.min { background: #ffbd2e; }
+.terminal-btn.max { background: #27c93f; }
+
+/* Cursor piscando */
+
+@keyframes blink-cursor {
+    0%, 50% { border-color: #00ff00; }
+    51%, 100% { border-color: transparent; }
+}
+
+.terminal-main-title {
+    color: #ffbd2e;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.terminal-tutorial {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+}
+
+.tutorial-cmd {
+    color: #00ff00;
+    /* Remova a linha abaixo para não sobrescrever a fonte Ubuntu */
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+#terminal-output {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+#terminal-output:empty {
+    display: none;
+}
