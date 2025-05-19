@@ -1,5 +1,9 @@
 # Ubuntu Terminal Portfolio
 
+https://ubuntuterminalportfolio.netlify.app/
+
+![Image](https://github.com/user-attachments/assets/3337c1c1-9eba-4deb-a799-1930a6bd5539)
+
 This project is a portfolio website designed to mimic the appearance and functionality of a Linux Ubuntu terminal. Users can interact with the terminal-like interface to view information about the portfolio owner, including their bio, skills, projects, and contact information.
 
 ## Project Structure
